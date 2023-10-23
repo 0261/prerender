@@ -1,0 +1,32 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["perfectionist"],
+  "rules": {
+    "perfectionist/sort-interfaces": "error",
+    "semi-spacing": "error",
+    "space-in-parens": "error",
+    "@typescript-eslint/semi": "error",
+    "space-before-blocks": "error",
+    "block-spacing": "error",
+    "arrow-spacing": "error",
+    "array-bracket-spacing": "error",
+    "array-element-newline": ["error", "consistent"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ]
+  },
+  "ignorePatterns": ["scripts/", "node_modules/", "src/graphql/**/*.ts", "vite.config.ts", "functopns/**/*.ts"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ]
+}
