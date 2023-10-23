@@ -1,4 +1,3 @@
-import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 // import path from 'path';
@@ -31,11 +30,6 @@ export default defineConfig({
     react(),
     checker({
       typescript: true,
-    }),
-    vanillaExtractPlugin({
-      esbuildOptions: {
-        external: ['@seed-design'],
-      },
     }),
   ],
 });
