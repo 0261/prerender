@@ -14,7 +14,11 @@ const router = createBrowserRouter([
   {
     path: '/posts/:id',
     element: <PostDetail />
-  }
+  },
+  {
+    path: '/photos/:id',
+    element: <PostDetail />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
